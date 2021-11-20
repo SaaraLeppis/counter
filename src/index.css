@@ -1,13 +1,116 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+:root {
+  --mid-color: #3096e6;
+  --midish-color: #7dadd2;
+  --main-text-color: #315273;
+  --darkish-color: #3c647b;
+  --light-color: #dfecf3;
+  --second: #8ed173;
+  --third: #cba1d7;
+  --fourth: hsl(27, 80%, 80%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--main-text-color);
+}
+header {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  padding: 2em;
+  background-color: var(--midish-color);
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: solid 5px #ec6f3e;
+}
+header p {
+  font-size: 2em;
+}
+footer p {
+  color: var(--second);
+}
+main {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-color);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+button {
+  background-color: var(--main-text-color);
+  font-size: 1.2em;
+  border: none;
+  color: var(--light-color);
+  padding: 0.8rem;
+  margin: 1rem;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px var(--darkish-color);
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: var(--midish-color);
+  color: #162433;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--midish-color),
+    var(--darkish-color)
+  );
+  color: var(--darkish-color);
+  height: 100px;
+  padding: 2rem;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+  background-color: var(--fourth);
+  color: #162433;
+  height: 20rem;
+  width: 20rem;
+  /*border: 3px solid var(--main-text-color);*/
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px var(--main-text-color);
+}
+.odd {
+  background-color: var(--second);
+}
+.even {
+  background-color: var(--third);
 }
