@@ -3,6 +3,12 @@
 Classroom coding using REACT.
 After couple of weeks of react studies.
 
+## Built with
+
+- REACT
+- JavaScript/JSX
+- CSS
+
 ## Counter's function
 
 From buttons you can add/remove 1 or 5 numbers to counter or reset it.
@@ -19,4 +25,4 @@ Counter circle's background color changes based on counter's value - whether it 
 
 ![counter even number](/assets/pictures/screenshot_counterEven.png)
 ![counter odd number](/assets/pictures/screenshot_counterOdd.png)
-![counter video](/assets/pictures/screenRecording_counter.mov)
+![counter video](/assets/pictures/screenrecord_counter.mov)
